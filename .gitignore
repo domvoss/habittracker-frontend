@@ -1,0 +1,47 @@
+# Logs
+**/logs
+**/*.log
+**/npm-debug.log*
+
+# Angular build output
+**/dist/
+**/build/
+**/.angular/
+
+# Dependency directories
+**/node_modules/
+
+# IDEs and editors
+**/.idea/
+**/.vscode/
+**/*.suo
+**/*.ntvs_analysis.dat
+**/*.njsproj
+**/*.sln
+**/*.sw?
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+**/.env
+**/.env.*.local
+
+# Compiled TypeScript
+**/*.js
+**/*.js.map
+
+# Cache
+**/.turbo/
+**/.cache/
+**/.eslintcache
+
+# Testing
+**/coverage/
+**/karma-*.xml
+**/.nyc_output/
+
+# Optional: OS-specific metadata
+ehthumbs.db
+Desktop.ini
