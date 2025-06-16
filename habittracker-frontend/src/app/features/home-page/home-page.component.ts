@@ -17,8 +17,17 @@ export class HomePageComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.subscriptions.push(this._authService.getData().subscribe((value) => this.data = value));
-    console.log(this.data);
+    this.subscriptions.push(this._authService.getData().subscribe({
+      next: (value) => {
+        this.data = value;
+      },
+      error: (err) => {
+        this.data = err;
+      },
+      complete: () => {
+        console.log(this.data);
+      }
+    }));
   }
 
   ngOnDestroy(): void {
